@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="sources/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tip Calculator App | By David Carreño</title>
+</head>
+<body>
+    <div class="container">
+
+        <!------------- Header Section -------------->
+
+        <header class="header">
+            <img src="sources/images/logo.svg" alt="splitter">
+        </header>
+
+        <!------------- App Section ----------------->
+
+        <div class="app-container">
+            <div class="app-box">
+                <div class="box-item box-1">
+                    <div class="box-1-item enter-value">
+                        <img src="sources/images/icon-dollar.svg" alt="dollar" class="dollar">
+                        <label for="bill">Bill</label>
+                        <input id="bill" name="bill" type="number" class="box-1-input" placeholder="0">
+                    </div>
+
+                    <!----------- Buttons Section ------------->
+
+                    <div class="box-1-item buttons">
+                        <span>Select Tip %</span>
+
+                        <div class="div-buttons">
+                            <button id="5%" class="select-btn" value="5">5%</button>
+                            <button id="10%" class="select-btn" value="10">10%</button>
+                            <button id="15%" class="select-btn" value="15">15%</button>
+                            <button id="25%" class="select-btn" value="25">25%</button>
+                            <button id="50%" class="select-btn" value="50">50%</button>
+                            <input id="custom" class="custom" type="number" placeholder="Custom">
+                        </div>
+                    </div>
+
+                    <div class="box-1-item enter-people">
+                        <img src="sources/images/icon-person.svg" alt="people" class="people">
+                        <label for="people">Number of People</label><span id="error" class="error">Can't be zero</span>
+                        <input id="people" name="people" type="number" class="box-1-input" placeholder="0">
+                    </div>
+                </div>
+
+                <div class="box-item box-2">
+                    <div class="box-2-item total">
+                        <div class="amount-div">
+                            <span class="amount-span">Tip Amount</span>
+                            <span class="person-span">/ person</span>
+                        </div>
+
+                        <div class="amount-number">
+                            <h2>$</h2><h2 id="amount">0.00</h2>
+                        </div>
+                    </div>
+
+                    <div class="box-2-item total">
+                        <div class="amount-div amount-2">
+                            <span class="amount-span">Total</span>
+                            <span class="person-span">/ person</span>
+                        </div>
+
+                        <div class="amount-number div-total">
+                            <h2>$</h2><h2 id="total">0.00</h2>
+                        </div>
+                    </div>
+
+                    <div class="box-2-item reset">
+                        <button id="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
